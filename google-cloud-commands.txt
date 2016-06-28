@@ -1,0 +1,8 @@
+#### Instance status listing
+watch -n 1 -d gcloud --project rise-rethinkdb compute instances list
+
+#### SSH with tempoary disabling of host checking
+ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  162.222.178.0
+
+#### SSH tail of remote log file
+ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  162.222.178.0 'tail -f /home/tyler_johnson/horizon-test/logfile.txt'
