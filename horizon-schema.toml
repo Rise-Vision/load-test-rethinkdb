@@ -1,0 +1,4 @@
+[collections.messages]
+[groups.default]
+[groups.default.rules.carte_blanche]
+template = "any()"
